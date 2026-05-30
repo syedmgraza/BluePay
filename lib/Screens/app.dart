@@ -7,7 +7,11 @@ class App extends StatelessWidget{
     return MaterialApp(
        debugShowCheckedModeBanner: false,
       home:Scaffold(
-        appBar: AppBar(title: Text('BluePay'),),
+        appBar: AppBar(
+          title: Text('BluePay'),centerTitle:true ,
+          leading:IconButton(onPressed: ()=>{},
+            icon:Icon(Icons.menu,size:30,color:Colors.blue),),
+        ),
         body: Container(
 
         ),
